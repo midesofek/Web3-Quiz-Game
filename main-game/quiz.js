@@ -1,6 +1,16 @@
 "use strict";
 
-//Declaring the questions
+// SELECT THE HTML ELEMENTS
+const answerInput = document.querySelector(".answer-input");
+const inputAnswerBtn = document.querySelector(".submit-answer");
+const displayMessage = document.querySelector(".message");
+const userScore = document.querySelector(".score");
+const userHighScore = document.querySelector(".highscore");
+const backgroundColor = document.querySelector("body");
+const restartButton = document.querySelector(".restart-quiz");
+
+//Declaring the question
+// DOing this through a key-value map
 const questionA = new Map([
   ["question", "A. Who Founded Ethereum?"],
   [
@@ -21,35 +31,6 @@ const questionA = new Map([
   [false, "😥 Incorrect, keep trying"],
 ]);
 
-/*
-// const questionB = {
-//   question: "2. What is the smallest unit of ETH?",
-//   answer: ["a. Ethereum", " b. BTC", " c. Gwei", " d. Wei"],
-// };
-
-// const questionC = {
-//   question: "3. What is the maximum supply of Ether?",
-//   answer: [
-//     "a. 21 million",
-//     " b. Unlimited",
-//     " c. 1 billion",
-//     " d. 100 billion",
-//   ],
-// };
-
-// const questionD = {
-//   question: "4. The most popular programming language for web3 is?",
-//   answer: ["a. JavaScript", " b. Python", " c. Solidity", " d. Rust"],
-// };
-
-// const questionE = {
-//   question: "5. The native token for the Arbitrum Cardano Ecosystem is?",
-//   answer: ["a. ETH", " b. SOL", " c. ADA", " d. ARB"],
-// };
-
-// const web3Questions = [questionA, questionB, questionC, questionD, questionE];
-**/
-
 // LOADING THE QUIZ QUESTIONS
 const containerQuestion = document.querySelector(".quiz-container");
 
@@ -62,14 +43,6 @@ ${questionA.get("answer")}`;
 console.log(questionA);
 
 // ADD THE SUBMIT ANSWER FUNCTIONALITY
-const answerInput = document.querySelector(".answer-input");
-const inputAnswerBtn = document.querySelector(".submit-answer");
-const displayMessage = document.querySelector(".message");
-const userScore = document.querySelector(".score");
-const userHighScore = document.querySelector(".highscore");
-const backgroundColor = document.querySelector("body");
-const restartButton = document.querySelector(".restart-quiz");
-
 let score = 0;
 let highscore = 0;
 
