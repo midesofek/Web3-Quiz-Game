@@ -10,7 +10,7 @@
   <body>
     <header>
       <h1 class="header-text">Web3 Quiz Game</h1>
-      <p class="quiz-description">$How well do you know Web3?$</p>
+      <p class="quiz-description">$How well do you know Web3?$</p><br>
       <button class="button restart-quiz">Restart Quiz</button>
     </header>
     <main>
@@ -20,11 +20,11 @@
             <p> 1 Who Founded Ethereum?</p>
            <p> a. Satoshi Nakamoto b. Vitalik Cronje c. Do Kwon d. Vitalik Buterin</p>
         </ul> -->
-      </div>
+      </div><br>
       <section class="left">
-        <input type="number" class="answer-input" placeholder="Enter Answer"/>
-        <button class="button submit-answer">Submit!</button>
-      </section>
+        <input type="text" class="answer-input" placeholder="Enter Answer"/>
+        <button class="button submit-answer" id="submit-answer">Submit!</button>
+      </section><br>
       <section class="bottom-right">
       <div class="quiz-answer-container">
         <p class="message">...Answer <span class="question-number">Question A</span></p>
@@ -35,8 +35,7 @@
         <p class="label-highscore">
             🎯 Highscore: <span class="highscore">0</span>
           </p>
-        </section>
-    </section>
+      </section>
     </main>
     <script src="quiz.js"></script>
   </body>

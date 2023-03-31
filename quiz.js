@@ -6,7 +6,7 @@ const questionA = new Map([
   [
     "answer",
     [
-      "1. Satoshi Nakamoto",
+      " 1. Satoshi Nakamoto",
       " 2. Vitalik Cronje",
       " 3. Do Kwon",
       " 4. Vitalik Buterin",
@@ -91,6 +91,14 @@ inputAnswerBtn.addEventListener("click", function() {
   if (checkUserAnswer) {
     backgroundColor.style.backgroundColor = "#033d0d";
   }
+
+  if (!checkUserAnswer) {
+    backgroundColor.style.backgroundColor = "rgb(61, 26, 26)";
+    document.getElementById("submit-answer").style.backgroundColor = "black";
+    document.getElementById("submit-answer").style.color = "white";
+  }
+
+  
 });
 
 // Add the Restart Functionality
