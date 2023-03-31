@@ -8,9 +8,10 @@ const userScore = document.querySelector(".score");
 const userHighScore = document.querySelector(".highscore");
 const backgroundColor = document.querySelector("body");
 const restartButton = document.querySelector(".restart-quiz");
+const containerQuestion = document.querySelector(".quiz-container");
 
-//Declaring the question
-// DOing this through a key-value map
+// Declaring the question
+// Doing this through a key-value map
 const questionA = new Map([
   ["question", "A. Who Founded Ethereum?"],
   [
@@ -32,7 +33,6 @@ const questionA = new Map([
 ]);
 
 // LOADING THE QUIZ QUESTIONS
-const containerQuestion = document.querySelector(".quiz-container");
 
 // console.log(questionA);
 
