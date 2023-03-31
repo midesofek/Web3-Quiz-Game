@@ -81,9 +81,11 @@ button:hover {
   font-family: inherit;
   color: inherit;
   text-align: center;
+  margin: 0 auto;
   display: block;
   margin-bottom: 3rem;
 }
+
 .quiz-answer-container {
   display: flex;
   flex-direction: column;
@@ -92,19 +94,6 @@ button:hover {
 
 .submit-answer {
   margin-top: -1.5rem;
-}
-
-.left {
-  /* width: 52rem; */
-  /* display: flex; */
-  position: absolute;
-  top: 70%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  /* bottom: 3rem;
-  left: 30rem; */
-  /* flex-direction: column; */
-  /* align-items: center; */
 }
 
 .bottom-right {
@@ -149,3 +138,50 @@ button:hover {
 .quiz-feedback button {
   margin-top: 1rem;
 } */
+
+
+@media screen and (max-width: 768px) {
+  .restart-quiz {
+    height: 40px;
+    width: 150px;
+    font-size: 0.5rem;
+    position: relative;
+    font-weight: bold;
+  }
+
+  .quiz-description {
+    font-size: 1rem;
+    position: relative;
+    color: #c7c4c4;
+    text-align: center !important;
+  }
+
+  .header-text {
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+  }
+  
+  .quiz-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    color: rgb(61, 26, 26);
+  }
+  .left {
+    position: relative;
+  }
+  .bottom-right {
+    position: absolute;
+    margin: -100px 0px;
+    text-align: center;
+    bottom: 0rem;
+    right: 2rem;
+  }
+  .message {
+    text-align: center;
+  }
+}
